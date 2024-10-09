@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/unis_baseTheme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./image/icono.png" type="image/png">
+    <title>UCentral</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <a id="btn-inicio" href="https://aula-ucentral.scalahed.com/" data-section="inicio">INICIO</a>
+        <a id="btn-trayectos" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=2"
+            data-section="trayectos">TRAYECTOS</a>
+        <a id="btn-cierre" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=3"
+            data-section="cierre">CIERRE</a>
+        <a id="btn-openclass">
+            <img class="img-fluid align-bottom"
+                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/BT_Open%20class.png"
+                alt="Ícono Open Class">
+            <strong>OPEN CLASS</strong>
+        </a>
+        <a href="https://aula-ucentral.scalahed.com/">
+            <img src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/inicio.png"
+                alt="Ícono Home">
+        </a>
+    </div>
+
+    <!--Banner  -->
+    <div class="banner">
+        <p class="banner-content">
+            <img class="img-fluid align-top"
+                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/Bnn_%20general.png?time=1727210301442"
+                alt="Inico">
+        </p>
+    </div>
+    <!-- Contenido -->
+    <div >
+
+        <div class="diag-flex" >
+            <div class="parr-diagnostico">
+                <h2 class="diag-titulo">Evaluación diagnóstica</h2>
+                <p class="diag-parrafo">Antes de comenzar,
+                    te invitamos a realizar una evaluación diagnóstica. Esta prueba no tiene calificación y su objetivo
+                    es conocer tu nivel actual de conocimientos sobre los conceptos que abordaremos.<br><strong>¡Anímate
+                        a
+                        completarla y asegúrate de aprovechar al máximo tu aprendizaje!</strong> </p>
+                <p
+                    class="diag-cuentionario">
+                    <strong>Cuestionario</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Script para volver a la página anterior
+        document.getElementById("btn-volver").addEventListener("click", function () {
+            window.history.back();
+        });
+    </script>
+
+
+    <!-- Botón Volver -->
+    <div class="volver-container">
+        <button id="btn-volver" class="button-custom">
+            <strong><span>Volver</span></strong>
+        </button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,950 @@
+@charset "UTF-8";
+@import url('https://recursos-ucentral.scalahed.com/recursos/files/r6r/w231w/demo/ucentral-properties.css');
+
+
+
+/* --------> Elementos Html --------> */
+
+/* ---------------> Tipografía
+==================================================== */
+
+body {
+    font-family: 'Poppins';
+}
+  
+
+/* Estilos para la barra de navegación sticky con fondo blur */
+#brn-intro .sticky-nav {
+    position: sticky !important; /* Para otros navegadores */
+    top: 0 !important;
+    background: rgba(255, 255, 255, 0.7) !important; /* Fondo blanco transparente */
+    backdrop-filter: blur(10px) !important; /* Efecto de desenfoque */
+    z-index: 1000 !important; /* Asegura que la barra esté por encima de otros elementos */
+    padding: 1rem 0 !important;
+}
+
+#brn-intro {
+    margin: 0 0 2rem;
+}
+
+#brn-intro .nav {
+    margin: 0 0 .5rem;
+    list-style: none !important;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding: 1rem 0;
+    top: 0;
+    background-color: transparent; 
+    z-index: 1000; 
+}
+
+#brn-intro .nav .nav-link {
+    padding: .3rem .5rem;
+    margin: 0;
+    border-radius: 0;
+    color: #0D2566;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#brn-intro .nav .nav-link.active {
+    background-color: transparent;
+    color: #0D2566;
+    border-bottom: 4px solid #DB5738;
+}
+
+#brn-intro .nav .nav-item:hover {
+    color: #DB5738;
+    
+}
+
+#brn-intro .nameBox  {
+    min-height: 25vh;
+    margin: 0 0 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+#brn-intro .image{
+    background-image: url("https://recursos-ucentral.scalahed.com/recursos/files/r6r/w248w/Bnn_general.png");
+}
+
+#brn-intro .image-trayecto1{
+    background-image: url("https://recursos-ucentral.scalahed.com/recursos/files/r6r/w248w/Bnn_Trayecto_1.png");
+}
+
+#brn-intro .nameBox .caption {
+    margin: 4rem;
+    text-align: left;
+    color: white;
+
+}
+
+
+#brn-intro .nameBox .caption .courseName {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 5px var(--grey-60);
+}
+
+#brn-intro .nameBox .caption .courseComplete {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 5px var(--grey-60);
+}
+
+
+
+#brn-intro .contenedor-dos-columnas {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+#brn-intro .columna-izquierda {
+    flex: 1;
+}
+
+#brn-intro-content .columna-izquierda-ev {
+    flex: 2;
+
+}
+
+#brn-intro .p-index{
+    font-size: 1.3rem;
+    text-align: justify;
+    line-height: 1.5;
+    color: #0D2566;
+    margin-top: 20px;
+}
+
+
+
+#brn-intro .columna-derecha {
+    flex: 1;
+    padding: 10px;
+    align-items: center;
+}
+
+#brn-intro .video-contenedor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+#brn-intro .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    width: 100%;
+}
+  
+#brn-intro .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+
+/* --------Botones NavBar secundaria */
+#brn-intro .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+  
+#brn-intro  .button-custom {
+    flex-direction: column;
+    width: 161px;
+    height: 161px;
+    background-color: rgba(219, 87, 56, 0.05);
+    border: 2px solid rgba(219, 87, 56, 0.1);
+    border-radius: 15px;
+    display: flex;
+    padding-top: 2em;
+    justify-content: top;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+  
+#brn-intro  .button-custom img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+  
+#brn-intro  .button-custom strong {
+    color: #0d2566;
+    margin-top: 10px;
+    text-align: center;
+    transition: color 0.3s;
+}
+  
+#brn-intro  .button-custom:hover {
+    //background-color: var(--colorBlueLight);
+    background-color: #DB5738;
+    color: white;
+}
+  
+#brn-intro  .button-custom:hover img {
+    //color: var(--brandColor-secondary);
+    filter: brightness(0) invert(1); /* Aplicar filtro a la imagen */
+}
+  
+#brn-intro  .button-custom:hover strong {
+    color: white;
+}
+  
+#brn-intro  .button-custom.active {
+    background-color: #DB5738;
+    color: white;
+}
+  
+#brn-intro  .button-custom.active img {
+    filter: brightness(0) invert(1); /* Aplicar filtro a la imagen */
+}
+  
+#brn-intro  .button-custom.active strong {
+    color: white;
+}
+
+/* --------Trayecto----- */
+#trayectos .container-problematizacion {
+    display: flex;
+    flex-direction: column; /* Asegurar que el título esté sobre las columnas */
+    background-color: var(--colorOrangeLight);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 0; /* Eliminar margen superior para pegar al banner */
+    min-height: 300px; /* Establecer un alto mínimo más grande */
+}
+
+#trayectos .container-problematizacion  h1 {
+    color: #DB5738;
+    font-size: 2rem;
+    padding-left: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+  
+#trayectos  .container-problematizacion .columns {
+    display: flex;
+    width: 100%;
+    gap: 1.25em;
+}
+  
+#trayectos  .container-problematizacion .left-column {
+    flex: 2; 
+    padding-right: auto;
+    padding-left: 2.5em;
+    display: flex;
+    justify-content: center; 
+    align-items: top;
+    text-align: justify; 
+    color: #0D2566;
+}
+  
+#trayectos  .container-problematizacion .right-column {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+  /* Estilos para el botón de problematización */
+  #trayectos .problematizacion-button {
+    font-size: 2rem;
+    background-color: rgb(243, 247, 247);
+    width: 258px;
+    height: 200px;
+    border-radius: 50px 0 50px 0;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: top;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: height 0.3s ease; /* Añadir transición para suavizar el efecto */
+}
+  
+#trayectos .problematizacion-button:hover {
+    
+    height: 250px; /* Agrandar hacia abajo el doble */
+}
+  
+#trayectos .problematizacion-button a {
+    font-weight: bold;
+    color: rgb(219, 87, 56);
+    text-align: center; /* Centrar el texto */
+    text-decoration: none;
+    
+}
+  
+#trayectos .problematizacion-button img {
+    width: 52px;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+#trayectos .problematizacion-button span {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(219, 87, 56);
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+#trayectos .problematizacion-button:hover span {
+    opacity: 1;
+    
+}
+
+#trayectos .menuTrayecto .nav{
+        flex-direction: row;
+        gap: 5px;
+        margin: 0 0 1rem;
+}
+
+#trayectos .menuTrayecto .nav-pills .nav-link{
+        padding: .2rem .5rem;
+        color: var(--grey-90);
+        font-weight: 500;
+        background-color: var(--grey-05);
+        border: 1px solid var(--grey-10);
+}
+
+#trayectos .menuTrayecto .nav-pills .nav-link.active{
+        background-color: var(--brandColor-01);
+        color: var(--grey-00);
+}
+
+#trayectos .cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#trayectos .card {
+    display: block;
+    margin-top: 20px;
+    width: 19em;
+    height: 15em;
+    border: none;
+    border-radius: 0 30px 0 30px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#trayectos .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+
+#cierre .container-cierre h1 {
+    color: #DB5738;
+    font-size: 2rem;
+    padding-left: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.navigation-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.button-bh{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    width: 6em;
+    height: 2em;
+    background-color: rgba(219, 87, 56, 0.05);
+    border: 2px solid rgba(219, 87, 56, 0.1);
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    cursor: pointer; 
+    margin-right: 10px;
+}
+
+.button-bh:hover {
+    background-color: #DB5738;
+    color: white;
+}
+
+/*---- Trayecto1 / Trayecto2 ----*/
+#brn-intro-trayecto {
+    margin: 0 0 2rem;
+}
+
+#brn-intro-trayecto .nav {
+    margin: 0 0 .5rem;
+    list-style: none !important;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    background-color: white; 
+    z-index: 1000; 
+}
+
+#brn-intro-trayecto .nav .nav-link {
+    padding: .3rem .5rem;
+    margin: 0;
+    border-radius: 0;
+    color: #0D2566;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#brn-intro-trayecto .nav .nav-link.active {
+    background-color: transparent;
+    color: #0D2566;
+    border-bottom: 4px solid #DB5738;
+}
+
+#brn-intro-trayecto .nav .nav-item:hover {
+    color: #DB5738;
+    
+}
+
+#brn-intro-trayecto .nameBox  {
+    min-height: 25vh;
+    margin: 0 0 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+#brn-intro-trayecto .nameBox .caption {
+    margin: 4rem;
+    text-align: left;
+    color: white;
+
+}
+
+
+#brn-intro-trayecto .nameBox .caption .courseName {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 5px var(--grey-60);
+}
+
+#brn-intro-trayecto .nameBox .caption .courseComplete {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 5px var(--grey-60);
+}
+
+#brn-intro-trayecto .image-trayecto1{
+    background-image: url("https://recursos-ucentral.scalahed.com/recursos/files/r6r/w248w/Bnn_Trayecto_1.png");
+}
+
+#brn-intro-trayecto .image-trayecto2{
+    background-image: url("https://recursos-ucentral.scalahed.com/recursos/files/r6r/w248w/Bnn_Trayecto_2.png");
+}
+
+/* Estilos para el botón de Evaluacion automatica trayecto 1 / 2 */
+#brn-intro-trayecto .problematizacion-button {
+    font-size: 1rem;
+    background-color: rgb(243, 247, 247);
+    width: 258px;
+    height: 200px;
+    border-radius: 50px 0 50px 0;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: top;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: height 0.3s ease; /* Añadir transición para suavizar el efecto */
+}
+  
+#brn-intro-trayecto .problematizacion-button:hover {
+    
+    height: 250px; /* Agrandar hacia abajo el doble */
+}
+  
+#brn-intro-trayecto .problematizacion-button a {
+    font-weight: bold;
+    color: rgb(219, 87, 56);
+    text-align: center; /* Centrar el texto */
+    text-decoration: none;
+    
+}
+  
+#brn-intro-trayecto .problematizacion-button img {
+    width: 52px;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+#brn-intro-trayecto .problematizacion-button span {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(219, 87, 56);
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+#brn-intro-trayecto .problematizacion-button:hover span {
+    opacity: 1;
+    
+}
+
+/*----- barra abajo del Banner de los Trayectos-*/
+
+#brn-intro-trayecto .base{
+ 
+    background-color: white; /* Fondo blanco */
+    border-radius: 50px; /* Bordes redondeados de 50px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra de tamaño mediano */
+    padding: 30px; /* Añade padding para el contenido interno */
+    margin: 0 auto; /* Centra el contenedor */
+    display: flex;
+
+    align-items: center;
+}
+
+#brn-intro-trayecto .boton{
+        border: none !important; 
+        font-size: 1em !important; 
+        background-color: transparent !important;
+        cursor: pointer;
+        padding: 0.8em 1em !important;
+        font-weight: bold !important;
+        color: #0D2566 !important;
+        border-bottom: 2px solid transparent !important;
+        text-align: left;
+        text-transform: none !important;
+}
+
+#brn-intro-trayecto .boton:hover {
+    color: #DB5738 !important; 
+    border-bottom: 2px solid #DB5738 !important;
+    
+}
+
+#brn-intro-trayecto .boton:active {
+    color: white !important; 
+    background-color: #DB5738 !important;
+    padding: 0.8em 1em !important;
+    border-radius: 50px !important;
+    border-bottom: 2px solid white !important;
+}
+
+#brn-intro-trayecto .link.active {
+    color: white !important; 
+    background-color: #DB5738 !important;
+    padding: 0.8em 1em;
+    border-radius: 50px !important;
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+#brn-intro-trayecto .contenido-tabs{
+    
+    background-color: #f9f9f9; 
+    padding: 1.25em;
+    min-height: 19em;
+}
+
+#brn-intro-trayecto .contenido-tabs-h2{
+    color: DB5738 !important;
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+.pestanas {
+    display: flex !important; /* Utiliza Flexbox para el diseño interno */
+    justify-content: center !important; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los botones */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pestanas-row {
+    width: 100%;
+}
+
+.pestanas-separacion {
+    margin: 0 30px !important; /* Añade espacio entre los botones */
+}
+
+#brn-intro-trayecto .column-container-aprendizaje {
+    display: flex;
+    gap: 20px;
+}
+
+#brn-intro-trayecto .left-column-aprendizaje {
+    flex: 1; /* Ajusta el tamaño de la columna izquierda */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+#brn-intro-trayecto .backgr{
+    background-color: #f9f9f9 !important;
+}
+
+#brn-intro-trayecto .left-column-aprendizaje img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+#brn-intro-trayecto .right-column-aprendizaje {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+#brn-intro-trayecto .right-column-aprendizaje p {
+    margin-right: 3em;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #0D2566;
+}
+
+#brn-intro-trayecto .tit-subproblemitacion {
+    margin: 3em;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #0D2566;
+}
+
+#brn-intro-trayecto .tit-c1-2{
+    margin: 3em 3em 3em 1em;
+    font-size: 1.3em;
+    line-height: 1.5;
+    color: #0D2566;  
+}
+
+#brn-intro-trayecto .contenedor-botones {
+    display: flex; 
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 40px; 
+    margin-bottom: 40px;
+    margin-left:300px;
+}
+
+#brn-intro-trayecto .entregable-botones {
+    width: 258px; 
+    height: 134px; 
+    border: 2px solid #D0D5DD; 
+    background-color: white; 
+    border-radius: 30px 0 30px 0; 
+    display: flex; justify-content: 
+    center; align-items: center; 
+    flex-direction: column; 
+    margin-right: 20px; 
+    cursor: pointer; 
+    margin-bottom: 30px;
+}
+
+#brn-intro-trayecto .entregable-botones span{
+    font-weight: bold; 
+    color: #0d2566;
+}
+
+#brn-intro-trayecto .glosario {
+    width:90%
+    background-color: #fcfcfd; 
+    padding: 0.50em; 
+    cursor: pointer; 
+    font-weight: bold; 
+    text-align: left; 
+    border-radius: 0.5em; 
+    margin-bottom: 0.65em; 
+    font-size: 1rem; 
+    color: #0d2566;
+}
+
+#brn-intro-trayecto .glosario-texto {
+    margin-left: 1em !important;
+    padding-left: 1em !important;  
+    font-size: 1rem !important; 
+    color: #0d2566 !important;
+}
+
+
+
+
+
+
+
+
+/* Estilos responsivos para pantallas menores a 576px */
+@media (max-width: 576px) {
+    #brn-intro .contenedor-dos-columnas {
+        flex-direction: column;
+        gap: 0;
+        padding: 10px;
+    }
+
+    #brn-intro .columna-izquierda,
+    #brn-intro .columna-derecha {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+
+    #brn-intro .nav .nav-link {
+        border-radius: 0;
+    }
+
+    #brn-intro .video-wrapper iframe {
+        border-radius: 0;
+    }
+
+    #brn-intro .button-container {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    #brn-intro .button-custom {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        padding-top: 1em;
+    }
+
+    #trayectos .container-problematizacion .columns {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #trayectos .container-problematizacion .left-column,
+    #trayectos .container-problematizacion .right-column {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+
+    #trayectos .problematizacion-button {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    #trayectos .menuTrayecto .nav-pills .nav-link {
+        border-radius: 0;
+    }
+
+    #trayectos .card {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .button-bh {
+        border-radius: 0;
+    }
+
+    #brn-intro-trayecto .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #brn-intro-trayecto .nav .nav-link {
+        border-radius: 0;
+    }
+
+    #brn-intro-trayecto .nameBox .caption {
+        margin: 2rem;
+        text-align: center;
+    }
+
+    #brn-intro-trayecto .nameBox .caption .courseName,
+    #brn-intro-trayecto .nameBox .caption .courseComplete {
+        font-size: 1.5rem;
+    }
+
+    .contenedor-dos-columnas {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px;
+    }
+
+    .columna-izquierda,
+    .columna-derecha {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+
+    .button-custom {
+        border-radius: 0;
+        width: 100%;
+    }
+    #brn-intro-trayecto .columns {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #brn-intro-trayecto .left-column,
+    #brn-intro-trayecto .right-column {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+
+    #brn-intro-trayecto .problematizacion-button {
+        border-radius: 0;
+        width: 100%;
+        font-size: 0.875rem; /* Reducir el tamaño de la fuente */
+    }
+
+    #brn-intro-trayecto .problematizacion-button a {
+        font-size: 0.875rem; /* Reducir el tamaño de la fuente */
+    }
+
+    #brn-intro-trayecto .problematizacion-button span {
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+    }
+
+    #brn-intro-trayecto .column-container-aprendizaje {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #brn-intro-trayecto .left-column-aprendizaje,
+    #brn-intro-trayecto .right-column-aprendizaje {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+
+    #brn-intro-trayecto .base {
+        background-color: transparent; /* Elimina el fondo blanco */
+        box-shadow: none; /* Elimina la sombra */
+        padding: 0; /* Elimina el padding */
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+    }
+
+    #brn-intro-trayecto .boton {
+        width: 100vw; /* Ocupa el 100% del ancho */
+        border-radius: 0 !important; /* Elimina los bordes redondeados */
+        text-align: center; /* Centra el texto */
+        padding: 1em 0 !important; /* Ajusta el padding */
+    }
+
+    #brn-intro-trayecto .link.active {
+        border-radius: 0 !important; /* Elimina los bordes redondeados */
+    }
+
+    #brn-intro-trayecto .entregable-botones {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #brn-intro-trayecto .glosario {
+        font-size: 0.875rem;
+        border-radius: 0;
+    }
+
+    #brn-intro-trayecto .glosario-texto {
+        font-size: 0.875rem !important;
+    }
+
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+/* Dispositivos: computadoras de escritorio, 992px+ */
+@media (min-width: 992px) {
+    .wlg-50 {
+        max-width: 50%;
+    }
+
+    .wlg-60 {
+        max-width: 60%;
+    }
+
+    .wlg-70 {
+        max-width: 70%;
+    }
+
+    .wlg-80 {
+        max-width: 80%;
+    }
+
+    .wlg-90 {
+        max-width: 90%;
+    }
+
+
+}
+
+/* Dispositivos: escritorios grandes, 1200px+ */
+@media (min-width: 1200px) {}

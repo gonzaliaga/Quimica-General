@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://recursos-ucentral.scalahed.com/recursos/files/r6r/w231w/unis_baseTheme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./image/icono.png" type="image/png">
+    <meta name="description" content="El curso contribuye a explicar los problemas que ha abordado históricamente la teoría administrativa, los aportes hechos a la gestión de las organizaciones, las respuestas que se han formulado a dichos problemas y permite comprender el momento histórico, el contexto y la situación organizacional en que se desarrollaron las teorías y con ello comprender la evolución del pensamiento administrativo.">
+    <title>UCentral</title>
+</head>
+<body>
+    <div id="navbar">
+        <a id="btn-inicio" href="https://aula-ucentral.scalahed.com/" data-section="inicio">INICIO</a>
+        <a id="btn-trayectos" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=2" data-section="trayectos">TRAYECTOS</a>
+        <a id="btn-cierre" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=3" data-section="cierre">CIERRE</a>
+        <a id="btn-openclass">
+                <img class="img-fluid align-bottom" src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/BT_Open%20class.png" alt="Ícono Open Class">
+                <strong>OPEN CLASS</strong>
+        </a>
+        <a href="https://aula-ucentral.scalahed.com/">
+            <img src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/inicio.png" alt="Ícono Home">
+        </a>
+    </div>
+
+    <!--Banner  -->
+    <div class="banner">
+        <p class="banner-content">
+            <img class="img-fluid align-top" src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/Bnn_%20general.png?time=1727210301442" alt="Inico">
+        </p>
+    </div>
+    <div>
+    <!-- Contenedor de dos columnas -->
+    <div class="contenedor-dos-columnas">
+        <div class="columna-izquierda">
+            <p class="p-index">La asignatura de Química General tiene como propósito el estudio básico de la materia, sus propiedades y transformaciones. Se estudiarán las leyes y principios generales que rigen el comportamiento de la materia, la relación existente entre las propiedades de esta y la estructura, el enlace químico y las fuerzas intermoleculares; así como la cuantificación de la materia y los cambios energéticos asociados a las transformaciones. Se empleará el método científico como herramienta para estudiar el entorno y las problemáticas asociadas.</p>
+        </div>
+        <div class="columna-derecha">
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe src="https://vimeo.com/1014950014?share=copy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Botonera inferior-->
+    <div class="button-container">
+        <a class="button-custom" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=6">
+            <img src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/guia.png" alt="Icono1">
+            <strong>Guía de<br>navegación</strong>
+        </a>
+        <a class="button-custom" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=7">
+            <img src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/foro.png" alt="Foro de Presentacion">
+            <strong>Foro de<br>presentación</strong>
+        </a>
+        <a class="button-custom" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=8">
+            <img src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/ruta.png" alt="Ruta de aprendizaje">
+            <strong>Ruta de<br>aprendizaje</strong>
+        </a>
+        <a class="button-custom" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=9">
+            <img src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/silabo.png" alt="Icono 4">
+            <strong>Sílabo</strong>
+        </a>
+        <a class="button-custom" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=10">
+            <img src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/evaluacion.png" alt="Evaluacion">
+            <strong>Evaluación</strong>
+        </a>
+        <a class="button-custom" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=11">
+            <img src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/consultas.png" alt="Consultas">
+            <strong>Foro de<br>consultas</strong>
+        </a>
+    </div>
+
+
+
+<!--Aca van algunos scrip para la funcionalidad-->
+<script>
+    // Mantener activo el enlace correcto al cargar la página
+    window.onload = function() {
+      var currentURL = window.location.href;
+      var links = document.querySelectorAll('#navbar a');
+  
+      links.forEach(function(link) {
+        if (link.href === currentURL) {
+          link.classList.add('active');
+        }
+      });
+    };
+  </script>
+
+
+</body>
+</html>

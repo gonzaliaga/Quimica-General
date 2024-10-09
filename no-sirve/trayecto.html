@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/unis_baseTheme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./image/icono.png" type="image/png">
+    <title>UCentral</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <a id="btn-inicio" href="https://aula-ucentral.scalahed.com/" data-section="inicio">INICIO</a>
+        <a id="btn-trayectos" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=2"
+            data-section="trayectos">TRAYECTOS</a>
+        <a id="btn-cierre" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=3"
+            data-section="cierre">CIERRE</a>
+        <a id="btn-openclass">
+            <img class="img-fluid align-bottom"
+                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/BT_Open%20class.png"
+                alt="Ícono Open Class">
+            <strong>OPEN CLASS</strong>
+        </a>
+        <a href="https://aula-ucentral.scalahed.com/">
+            <img src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/inicio.png"
+                alt="Ícono Home">
+        </a>
+    </div>
+
+    <!--Banner  -->
+    <div class="banner">
+        <p class="banner-content">
+            <img class="img-fluid align-top"
+                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/Bnn_%20general.png?time=1727210301442"
+                alt="Inico">
+        </p>
+    </div>
+    <div class="container-problematizacion">
+        <h1 class="prom-trayecto">Problematización</h1>
+        <div class="columns">
+            <div class="left-column">
+                <p>¿Cómo implementar estrategias para reducir las emisiones de CO2, que se generan en los procesos de combustión bajo diferentes condiciones?<br><br> A continuación da clic sobre el ícono de <strong>Evaluación Diagnóstica</strong> para iniciar el curso.</p>
+            </div>
+            <div class="right-column">
+                <button class="problematizacion-button">
+                    <a href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=5">
+                        <img class="img-fluid align-bottom"
+                            src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/70406786/Icon1.png?time=1727031142603"
+                            alt="IMAGEN" width="52" height="52">
+                        Evaluación<br>Diagnóstica
+                    </a>
+                    <a href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=5">
+                        <span></span>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Nueva card -->
+    <div class="cards-container">
+        <a class="card" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=4">
+            <img class="img-fluid align-bottom" src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/994646374/trayecto1.png?time=1727031171950" alt="ffff">
+            <span class="card-text">Trayecto 1</span>
+        </a>
+        <a class="card" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=4">
+            <img class="img-fluid align-bottom" src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/994646374/trayecto2.png?time=1727031187706" alt="ffff">
+            <span class="card-text">Trayecto 2</span>
+        </a>
+        <a class="card" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=4">
+            <img class="img-fluid align-bottom" src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/994646374/trayecto3.png?time=1727031200987" alt="ffff">
+            <span class="card-text">Trayecto 3</span>
+        </a>
+    </div>
+    <!-- End item -->
+
+
+
+
+    <script>
+        // Script para volver a la página anterior
+        document.getElementById("btn-volver").addEventListener("click", function () {
+            window.history.back();
+        });
+    </script>
+    <!-- Botón Volver -->
+    <div class="volver-container">
+        <button id="btn-volver" class="button-custom">
+            <strong><span>Volver</span></strong>
+        </button>
+    </div>
+</body>
+
+</html>

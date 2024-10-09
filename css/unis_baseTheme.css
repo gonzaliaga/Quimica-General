@@ -1,0 +1,260 @@
+@charset "UTF-8";
+@import url('https://recursos-ucentral.scalahed.com/recursos/files/r6r/w231w/demo/ucentral-properties.css');
+
+/* ---------------> Tipografía
+==================================================== */
+
+/* ---------------> Elementos Html
+==================================================== */
+
+/* ---------------> Clases generales
+==================================================== */
+.videoBox {
+    margin: 2rem auto;
+}
+
+
+
+/* ---------------> Patrones Flex/Grid
+==================================================== */
+
+/* ---------------> Módulos
+==================================================== */
+#brn-intro {
+    margin: 0 0 2rem;
+}
+
+#brn-intro .nav {
+    margin: 0 0 .5rem;
+    list-style: none !important;
+}
+
+#brn-intro .nav .nav-link {
+    padding: .3rem .5rem;
+    margin: 0;
+    border-radius: 0;
+    color: var(--grey-60);
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+#brn-intro .nav .nav-link.active {
+    background-color: var(--brandColor-01);
+    color: var(--grey-00);
+}
+
+#brn-intro .nameBox {
+    min-height: 25vh;
+    margin: 0 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#brn-intro .nameBox .caption {
+    margin: 1rem;
+    text-align: center;
+    color: var(--grey-00);
+    border: 1px solid var(--grey-00);
+}
+
+#brn-intro .nameBox .caption .courseName {
+    text-shadow: 2px 2px 5px var(--grey-90);
+}
+
+
+#introMenu .nav {
+    gap: .3rem;
+}
+
+#introMenu .nav .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    font-weight: 500;
+    color: var(--brandColor-01);
+    border-radius: var(--borderRadius);
+    background-color: color-mix(in oklch, var(--brandColor-01) 7%, white);
+    border: 1px solid color-mix(in oklch, var(--brandColor-01) 25%, white);
+}
+
+#introMenu .nav .nav-link.active {
+    border: 1px solid color-mix(in oklch, var(--brandColor-01) 25%, white);
+}
+
+
+
+
+
+#brn-trayecto .nav {
+    margin: 0 0 .3rem;
+    justify-content: center;
+    gap: .2rem;
+}
+
+#brn-trayecto .nav .nav-link {
+    padding: .2rem;
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--grey-60);
+}
+
+#brn-trayecto .nameBox {
+    min-height: 25vh;
+    margin: 0 0 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: var(--borderRadius);
+}
+
+#brn-trayecto .nameBox .caption {
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--grey-00);
+    border: 1px solid var(--grey-00);
+}
+
+#brn-trayecto .nameBox .caption .courseName,
+#brn-trayecto .nameBox .caption .schoolName {
+    text-shadow: 2px 2px 5px var(--grey-90);
+}
+
+
+
+#menuTrayecto{
+    margin: 0 0 2rem;
+}
+
+#menuTrayecto .nav{
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 0 1rem;
+}
+#menuTrayecto .nav-pills .nav-link{
+    background-color: var(--grey-05);
+    color: var(--grey-90);
+}
+
+#menuTrayecto .nav-pills .nav-link.active{
+    background-color: var(--brandColor-01);
+    color: var(--grey-00);
+}
+
+/* ---------------> Media queries
+==================================================== */
+
+/* Dispositivos: teléfonos horizontales, 576px+ */
+@media (min-width: 576px) {}
+
+/* Dispositivos: tabletas, 768px+ */
+@media (min-width: 768px) {
+
+    #brn-intro .nav .nav-link.active {
+        background-color: transparent !important;
+        border-bottom: 2px solid var(--brandColor-01);
+        color: var(--grey-60);
+    }
+
+    #brn-intro .nav .nav-link:hover {
+        background-color: transparent !important;
+        border-bottom: 2px solid var(--grey-10);
+    }
+
+    #introMenu .nav .nav-link:hover {
+        background-color: color-mix(in oklch, var(--brandColor-01) 15%, white);
+    }
+
+
+    #brn-intro .nameBox {
+        min-height: 20vh;
+        justify-content: flex-start;
+    }
+
+    #brn-intro .nameBox .caption {
+        max-width: 60%;
+        text-align: left;
+        border: none;
+    }
+
+
+
+
+
+    #brn-trayecto .nameBox .caption {
+        text-align: left;
+        border: none;
+    }
+
+    #brn-trayecto .nameBox .caption .courseName,
+    #brn-trayecto .nameBox .caption .schoolName {
+        text-shadow: 2px 2px 5px var(--grey-90);
+    }
+
+    #brn-trayecto .nameBox .caption .schoolName {
+        margin: 0;
+    }
+
+
+
+    #menuTrayecto .nav{
+        flex-direction: row;
+        gap: 5px;
+        margin: 0 0 1rem;
+    }
+    #menuTrayecto .nav-pills .nav-link{
+        padding: .2rem .5rem;
+        color: var(--grey-90);
+        font-weight: 500;
+        background-color: var(--grey-05);
+        border: 1px solid var(--grey-10);
+    }
+
+    #menuTrayecto .nav-pills .nav-link.active{
+        background-color: var(--brandColor-01);
+        color: var(--grey-00);
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Dispositivos: computadoras de escritorio, 992px+ */
+@media (min-width: 992px) {
+    .wlg-50 {
+        max-width: 50%;
+    }
+
+    .wlg-60 {
+        max-width: 60%;
+    }
+
+    .wlg-70 {
+        max-width: 70%;
+    }
+
+    .wlg-80 {
+        max-width: 80%;
+    }
+
+    .wlg-90 {
+        max-width: 90%;
+    }
+
+
+}
+
+/* Dispositivos: escritorios grandes, 1200px+ */
+@media (min-width: 1200px) {}

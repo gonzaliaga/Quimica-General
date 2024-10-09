@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/unis_baseTheme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./image/icono.png" type="image/png">
+    <title>UCentral</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <a id="btn-inicio" href="https://aula-ucentral.scalahed.com/" data-section="inicio">INICIO</a>
+        <a id="btn-trayectos" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=2"
+            data-section="trayectos">TRAYECTOS</a>
+        <a id="btn-cierre" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=3"
+            data-section="cierre">CIERRE</a>
+        <a id="btn-openclass">
+            <img class="img-fluid align-bottom"
+                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/BT_Open%20class.png"
+                alt="Ícono Open Class">
+            <strong>OPEN CLASS</strong>
+        </a>
+        <a href="https://aula-ucentral.scalahed.com/">
+            <img src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/inicio.png"
+                alt="Ícono Home">
+        </a>
+    </div>
+
+    <!--Banner  -->
+    <div class="banner">
+        <p class="banner-content">
+            <img class="img-fluid align-top"
+                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/964451155/Bnn_%20Trayecto%201.png"
+                alt="Inico">
+        </p>
+    </div>
+    <!-- Contenedor para centrar la barra -->
+    <div class="barra-contenedor">
+        <!-- Barra de navegación -->
+        <div class="barra-navegacion">
+            <div class="botones-contenedor">
+                <!-- Botón 1 -->
+                <button class="responsive-text boton" data-form="form-aprendizaje" id="btn-aprendizaje">Resultados de
+                    aprendizaje</button>
+                <!-- Botón 2 -->
+                <button class="responsive-text boton" data-form="form-subproblematizacion">Subproblematización</button>
+                <!-- Botón 3 -->
+                <button class="responsive-text boton" data-form="form-conceptualizacion">Conceptualización</button>
+                <!-- Botón 4 -->
+                <button class="responsive-text boton" data-form="form-apropiacion">Apropiación</button>
+                <!-- Botón 5 -->
+                <button class="responsive-text boton" data-form="form-glosario">Glosario</button>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 40px;">
+        <!-- Formularios (deben aparecer debajo de la barra de navegación) -->
+        <div id="form-aprendizaje"
+            style="display: none; margin-top: 40px; text-align: left; min-height: 350px; background-color: #f9f9f9; margin: 0 auto; padding: 20px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+            <h2 class="tit-aprendizaje">Resultados de Aprendizaje</h2>
+            <div class="cont-aprendizaje">
+                <p style=" text-align: justify;">Este curso está compuesto por diferentes recursos
+                    de aprendizaje y espacios para la interacción, te invitamos a acceder a cada uno de
+                    ellos.<br><br>Al finalizar este trayecto lograrás los siguientes resultados de
+                    aprendizaje:<br><br><strong>- Identifica las teorías organizacionales y los modelos de gestión
+                        con una visión cronológica de su evolución.</strong></p>
+            </div>
+        </div>
+        <div id="form-subproblematizacion" class="form-subproblematizacion">
+            <h2 class="h2-subproblematizacion">Estados de la materia</h2>
+            <p class="p-subproblematizacion"><br>¡Te damos la más cordial bienvenida a este trayecto
+                curso! Te invitamos a visualizar cada uno de los recursos educativos digitales, que te ayudarán a
+                avanzar en tu proceso de aprendizaje.<br><br>Empieza por consultar el siguiente recurso de
+                subproblematización. Utiliza el scroll para desplazarte y tener una visualización completa del
+                recurso, además puedes hacer clic en la pregunta de subproblematización.<br><br>Recuerda que puedes
+                descargar este recurso.</p>
+            <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item"
+                    src="https://recursos-ucentral.scalahed.com/recursos/files/r6r/w224w/Desarrollo-empresarial/index.html"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="form-conceptualizacion" class="form-conceptualizacion">
+            <div class="contenedor-conceptualizacion">
+                <div class="contenedor-botones-conceptualizacion">
+                    <button id="btn-conceptualizacion-1" class="boton-c1">Estados de la materia</button>
+                    <button id="btn-conceptualizacion-2" class="boton-c2">Clases de mezclas</button>
+                    <button id="btn-conceptualizacion-3" class="boton-c2">Diluciones</button>
+                </div>
+                <div class="contenedor-conceptualizacion-derecha">
+                    <h2 class="h2-conceptualizacion" id="texto-conceptualizacion-1">
+                    </h2>
+                    <p class="p-conceptualizacion" id="parrafo-conceptualizacion-1">
+                        Te invitamos a revisar el siguiente recurso, debes hacer clic en Comenzar o ir al menú para
+                        navegar por el recurso.
+                        Durante el recorrido realiza las actividades que se solicitan.</p>
+                    <div class="conten-conceptualizacion">
+                        <div id="recurso-conceptualizacion-1"
+                            class="embed-responsive embed-responsive-1by1 r-conceptualizacion-1">
+                            <iframe class="embed-responsive-item"
+                                src="https://recursos-ucentral.scalahed.com/recursos/files/r6r/w235w/index.html"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <h2 class="h2-conceptualizacion" id="texto-conceptualizacion-2">
+                    </h2>
+                    <p class="p-conceptualizacion" id="parrafo-conceptualizacion-2">
+                        El siguiente recurso presenta elementos clave de conceptualización y/o explicación del concepto,
+                        cuyo entendimiento es
+                        fundamental. Utiliza el scroll para desplazarte y tener una visualización completa del
+                        recurso, además puedes hacer clic en los elementos clave.</p>
+                    <div style="text-align: center; margin-left: 50px;">
+                        <div id="recurso-conceptualizacion-2"
+                            class="embed-responsive embed-responsive-1by1 r-conceptualizacin-2">
+                            <iframe class="embed-responsive-item"
+                                src="https://recursos-ucentral.scalahed.com/recursos/files/r6r/w226w/Historia-empresarial/index.html"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Pie de página de la conceptualización -->
+            <div class="pie-conceptualizacion">
+                <!-- Texto encima de la imagen -->
+                <div class="pie-conceptualizacion-contenedor">
+                    <h2 class="pie-conceptualizacion-h2">Recursos obligatorios</h2>
+                    <div class="pie-contenedor-texto">
+                        <!-- Enlace del primer video -->
+                        <p
+                            style="color: white; margin-bottom: 10px; display: flex; align-items: center; font-size: 1em;">
+                            <img style="width: 30px; height: 30px; margin-right: 10px;"
+                                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/871428628/libro-abierto.png"
+                                alt="icono"> Al fin entendí. (2021, 9 de septiembre). <em>Ion - Dipolo, Puentes de hidrógeno, Fuerzas de Dispersión, ¿Qué es eso? </em>.<a
+                                style="color: #db5738; text-decoration: none;"
+                                href="YouTube. https://youtu.be/Qi-ZIMqfLas?si=wGY9q8GpwbmB_d11" target="_blank" rel="noopener">
+                                Link</a>
+                        </p>
+                        <!-- Enlace del segundo video -->
+                        <p
+                            style="color: white; margin-bottom: 10px; display: flex; align-items: center; font-size: 1em;">
+                            <img style="width: 30px; height: 30px; margin-right: 10px;"
+                                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/871428628/libro-abierto.png"
+                                alt="icono"> Arriba la ciencia. (2021, 18 de febrero). <em>Estados y cambios de estados de la materia. </em>
+                                <a style="color: #db5738; text-decoration: none;"
+                                href="https://youtu.be/HQseoF4EI74?si=72ll_iMgIjCnFTJ-" target="_blank" rel="noopener">
+                                Link</a>
+                        </p>
+                        <!-- Enlace del tercer video -->
+                        <p
+                            style="color: white; margin-bottom: 10px; display: flex; align-items: center; font-size: 1em;">
+                            <img style="width: 30px; height: 30px; margin-right: 10px;"
+                                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/871428628/libro-abierto.png"
+                                alt="icono"> Arriba la ciencia. (2021, 9 de marzo). <em> Leyes de los gases, ley de Boyle, Charles, Gay Lussac, Combinada y gases ideales </em> <a style="color: #db5738; text-decoration: none;"
+                                href="https://youtu.be/9EkIWwa7elk?si=RkyrCECrHqHfDArQ" target="_blank" rel="noopener">
+                                Link</a>
+                        </p>
+                        <!-- Enlace del cuarto video -->
+                        <p
+                            style="color: white; margin-bottom: 10px; display: flex; align-items: center; font-size: 1em;">
+                            <img style="width: 30px; height: 30px; margin-right: 10px;"
+                                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/871428628/libro-abierto.png"
+                                alt="icono"> Chang, R. (2020). Capitulo XI. Fuerzas intermoleculares. En <em>Química</em> (13.ª ed.).
+                            McGraw-Hill Education. <a style="color: #db5738; text-decoration: none;"
+                                href="https://ebooks7-24-com.ezproxy.ucentral.edu.co/stage.aspx?il=10863&pg=441&ed= 
+                                " target="_blank"
+                                rel="noopener"> Link</a>
+                        </p>
+                        <!-- Enlace del quinto video -->
+                        <p
+                            style="color: white; margin-bottom: 10px; display: flex; align-items: center; font-size: 1em;">
+                            <img style="width: 30px; height: 30px; margin-right: 10px;"
+                                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/871428628/libro-abierto.png"
+                                alt="icono"> Chang, R. (2020). Capítulo XII. Propiedades físicas de las disoluciones. En <em>Química</em> (13.ª ed.).
+                            McGraw-Hill Education. <a style="color: #db5738; text-decoration: none;"
+                                href="https://ebooks7-24-com.ezproxy.ucentral.edu.co/?il=10863&pg=544" target="_blank"
+                                rel="noopener"> Link</a>
+                        </p>
+                        <!-- Enlace del sexto video -->
+                        <p
+                            style="color: white; margin-bottom: 10px; display: flex; align-items: center; font-size: 1em;">
+                            <img style="width: 30px; height: 30px; margin-right: 10px;"
+                                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/871428628/libro-abierto.png"
+                                alt="icono">Kenneth, R. (2022). Capitulo IX. Gases y teoría molecular. En<em>
+                                 Introducción a la Química</em>. (1ª ed.). Cengage Learning.<a style="color: #db5738; text-decoration: none;"
+                                href="https://ebooks7-24-com.ezproxy.ucentral.edu.co/?il=19686&pg=1"
+                                target="_blank" rel="noopener"> Link</a>
+                        </p>
+                    </div>
+                    <!---Recursos Opcionales-->
+                    <h2 class="pie-conceptualizacion-h2">Recursos opcionales</h2>
+                    <div style="padding-left: 50px; text-align: left;">
+                        <!-- Enlace del primer video Opcional -->
+                        <p
+                            style="color: white; margin-bottom: 10px; display: flex; align-items: center; font-size: 1em;">
+                            <img style="width: 30px; height: 30px; margin-right: 10px;"
+                                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/871428628/recurso_oblig_libro%20%281%29.png"
+                                alt="icono"> <span style="vertical-align: middle;"> Arriba la ciencia. (2021,12 de marzo). Ecuación ley de los gases ideales. <em> aprende a despejar la ecuación paso a paso </em>
+                                <a style="color: #db5738; text-decoration: none;"
+                                    href="YouTube. https://youtu.be/GQFJsclWxds?si=-vo2bicoTS1rlUj0" target="_blank"
+                                    rel="noopener"> Link</a>
+                            </span>
+                        </p>
+                        <!-- Enlace del segundo video Opcional-->
+                        <p
+                            style="color: white; margin-bottom: 10px; display: flex; align-items: center; font-size: 1em;">
+                            <img style="width: 30px; height: 30px; margin-right: 10px;"
+                                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/871428628/recurso_oblig_libro%20%281%29.png"
+                                alt="icono"> El Profesor Dave lo Explica. (2021,10 de junio). <em> La Teoría Cinética Molecular y las Leyes de los Gases Ideales.</em><a style="color: #db5738; text-decoration: none;"
+                                href=" https://youtu.be/HJK4a3-OT2c?si=Tzssv9Ri7QLSa_S6" target="_blank"
+                                rel="noopener"> Link</a>
+                        </p>
+                        <!-- Enlace del tercer video Opcional-->
+                        <p
+                            style="color: white; margin-bottom: 10px; display: flex; align-items: center; font-size: 1em;">
+                            <img style="width: 30px; height: 30px; margin-right: 10px;"
+                                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/871428628/recurso_oblig_libro%20%281%29.png"
+                                alt="icono"> <span style="vertical-align: middle;"> U4 cast FyQ 3 º ESO.indd (s.f.). <em>La materia: estados de agregación</em> (pp. 66-74). En McGraw-Hill Education.<a
+                                    style="color: #db5738; text-decoration: none;"
+                                    href="https://www.mheducation.es/bcv/guide/capitulo/8448153847.pdf" target="_blank"
+                                    rel="noopener"> Link</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----Aca comienza Apropiación-->
+        <div id="form-apropiacion"
+            style="display: none; margin-top: 40px; text-align: center; min-height: 650px; margin: 0 auto;">
+            <h2></h2>
+            <div
+                style=" background-color: #f9f9f9; padding: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); margin-bottom: 40px;">
+                <div style="display: flex; justify-content: center;"><!-- Botones a la izquierda -->
+                    <div style="flex: 1; text-align: left; max-width: 200px;">
+                        <h2 style="color: transparent;">gonzalo</h2>
+                        <button id="btn-apropiacion-1" class="apropiacion-boton">
+                            Actividad de<br>calificación automática </button> <button id="btn-apropiacion-2"
+                            class="apropiacion-boton">
+                            Actividad entregable </button> <button id="btn-apropiacion-3" class="apropiacion-boton">
+                            Actividad puntos<br>adicionales </button>
+                    </div>
+                    <!-- Textos a la derecha -->
+                    <div style="flex: 1; text-align: left; margin-left: 10px;">
+                        <h2 style="color: #db5738; margin-left: 40px; margin-right: 80px;">Apropiación</h2>
+                        <h2 id="texto-apropiacion-1" style="color: #0d2566; margin-top: 20px; margin-left: 40px;">
+                        </h2>
+                        <p id="parrafo-apropiacion-1"
+                            style="margin-left: 40px; display: none; text-align: justify; margin-right: 100px;">Esta
+                            actividad equivale a
+                            un 7% del curso, además te permitirá identificar la apropiación que tienes de los
+                            conceptos fundamentales del curso. Debes leer las indicaciones y posteriormente realizar
+                            las acciones requeridas para completar con éxito la actividad.<br><br>¡Recomendación!
+                            Antes de realizar esta actividad estudia atentamente los conceptos presentados en el
+                            trayecto. Selecciona la respuesta que consideras correcta.<br><br></p>
+                        <div style="text-align: center; margin-left: 50px;">
+                            <p id="recurso-apropiacion-1"
+                                style="width: 97%; height: 450px; background-color: #c0c0c0; margin-top: 10px; display: none; font-weight: bold; border-radius: 0 30px 0 30px;">
+                                Cuestionario</p>
+                        </div>
+                        <h2 id="texto-apropiacion-2" style="color: #0d2566; margin-top: 20px; margin-left: 40px;">
+                        </h2>
+                        <p id="parrafo-apropiacion-2"
+                            style="margin-left: 40px;margin-right: 60px; display: none; text-align: center;">
+                            <img style="width: 100%; margin: 10px 10px 10px 0px;"
+                                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/871428628/act_entregable.png"
+                                alt="icono"> Esta actividad es evaluable y tiene una calificación que corresponde al
+                            20% del curso, te permitirá identificar la apropiación que tienes de los conceptos
+                            fundamentales anteriormente vistos. Debes leer las indicaciones y posteriormente
+                            realizar las acciones requeridas para completar con éxito la actividad.
+                            <br><br>¡Recomendación! Antes de realizar este ejercicio estudia atentamente los temas
+                            presentados en el curso.
+                        </p>
+                        <div style="text-align: center; margin-left: 50px;">
+                            <div id="recurso-apropiacion-2"
+                                style="text-align: center; margin-left: 50px; display: none;">
+                                <div
+                                    style="display: center; gap: 10px; margin-top: 40px; margin-bottom: 40px;margin-left:300px;">
+                                    <!-- Primer Botón -->
+                                    <a href="https://aula-ucentral.scalahed.com/pluginfile.php/63/mod_resource/content/1/T1_Guia_de_actividades.pdf"
+                                        target="_blank">
+                                        <button href=""
+                                            style="width: 258px; height: 134px; border: 2px solid #D0D5DD; background-color: white; border-radius: 30px 0 30px 0; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-right: 20px; cursor: pointer; margin-bottom: 30px;">
+                                            <img style="width: 52px; height: 52px; margin-right: 5px; "
+                                                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/871428628/actividades.png"
+                                                alt="Icono"> <span style="font-weight: bold; color: #0d2566;">Guía
+                                                de actividades</span> </button>
+                                    </a>
+                                    <!-- Segundo Botón --> <button
+                                        style="width: 258px; height: 134px; border: 2px solid #D0D5DD; background-color: white; border-radius: 30px 0 30px 0; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-right: 20px;">
+                                        <img style="width: 52px; height: 52px; margin-right: 5px;"
+                                            src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/871428628/Iconenvio_act.png"
+                                            alt="Icono"> <span style="font-weight: bold; color: #0d2566;">Enviar
+                                            actividad</span> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 id="texto-apropiacion-3" style="color: #0d2566; margin-top: 20px; margin-left: 40px;">
+                        </h2>
+                        <p id="parrafo-apropiacion-3" style="margin-left: 40px; display: none; text-align: justify;">
+                            "Vestibulum lacinia arcu
+                            eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                            inceptos himenaeos."</p>
+                        <div style="text-align: center; margin-left: 50px;">
+                            <p id="recurso-apropiacion-3"
+                                style="width: 97%; height: 450px; background-color: #c0c0c0; margin-top: 10px; display: none; font-weight: bold; border-radius: 0 30px 0 30px;">
+                                Recurso 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="form-glosario"
+        style="display: none; margin-top: 40px; text-align: left;  min-height: 600px; margin: 0 auto; padding: 20px;">
+        <h2 style="color: #db5738; margin-left: 50px;">Glosario</h2>
+        <div style="width: 90%; min-width: 600px; margin: 20px auto;">
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px; ">☑</span>Átomo<span class="arrow" style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    La unidad más pequeña de un elemento químico que conserva sus propiedades y puede participar en
+                    reacciones químicas.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Cambio químico<span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Proceso en el que se producen transformaciones en la composición de las sustancias, resultando en la
+                    formación de nuevas sustancias.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Cambio físico <span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Transformación que afecta solo el estado o la apariencia de una sustancia sin alterar su composición
+                    química.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Configuración electrónica<span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Distribución de electrones en los orbitales de un átomo, fundamental para entender sus propiedades
+                    químicas.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Elemento<span class="arrow" style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Sustancia pura que no puede descomponerse en sustancias más simples mediante reacciones químicas,
+                    formada por átomos con el mismo número atómico.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Factores de conversión<span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Relaciones que expresan cuántas cantidades de una unidad son equivalentes a otra, permitiendo
+                    transformar y expresar una unidad de medida en otra.
+                </div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Isótopos<span class="arrow" style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Variantes de un mismo elemento químico que tienen el mismo número de protones, pero diferente número
+                    de neutrones.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Métodos de separación de mezclas<span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Técnicas utilizadas para separar los componentes de una mezcla sin alterar sus propiedades, como
+                    filtración, decantación y destilación.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Mezclas<span class="arrow" style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Combinaciones de dos o más sustancias donde cada una mantiene sus propiedades y características.
+                </div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Número atómico (Z)<span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Número de protones presentes en el núcleo de un átomo, que determina la identidad del elemento
+                    químico.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Número de masa (A)<span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Suma del número de protones y neutrones en el núcleo de un átomo.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Propiedades extrínsecas.<span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Características que dependen de la cantidad de materia, como la masa y el volumen.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Propiedades físicas<span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Características observables de una sustancia que no cambian su composición, como el color, el olor y
+                    la densidad.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Propiedades químicas<span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Características que describen cómo una sustancia puede reaccionar y transformarse en otra.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Propiedades intrínsecas<span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Características de la materia que no dependen de la cantidad de sustancia presente, como el punto de
+                    fusión y la densidad.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Sistema Inglés<span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Sistema de medidas utilizado principalmente en Estados Unidos, que no sigue una base decimal y tiene
+                    diferentes unidades para expresar magnitudes.</div>
+            </div>
+            <div>
+                <div
+                    style="background-color: #fcfcfd; padding: 15px; cursor: pointer; font-weight: bold; text-align: left; border-radius: 50px; margin-bottom: 10px; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    <span style="margin-right: 10px;">☑</span>Sistema Internacional de Unidades (SI)<span class="arrow"
+                        style="float: right;">▼</span>
+                </div>
+                <div
+                    style="padding: 15px; display: none; overflow: hidden; background-color: #fff; border-radius: 50px; margin-bottom: 10px; text-align: left; font-size: 1.5rem; color: var(--brandColor-primary);">
+                    Sistema de medición adoptado en la mayoría de los países, que establece un estándar para medir y
+                    expresar magnitudes.</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Botón de volver -->
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 40px;"><button id="btn-volver"
+            class="button-custom"
+            style="display: flex; justify-content: center; align-items: center; width: 161px; height: 60px; background-color: rgba(219, 87, 56, 0.05); border: 2px solid rgba(219, 87, 56, 0.1); border-radius: 15px; transition: background-color 0.3s; cursor: pointer;">
+            <strong><span style="color: #0d2566; margin: 0;">Volver</span></strong></button></div>
+    <p>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Manejador de eventos para botones generales
+                document.querySelectorAll('button[data-form]').forEach(button => {
+                    button.addEventListener('mouseenter', () => {
+                        button.style.backgroundColor = '#DB5738';
+                        button.style.color = 'white';
+                    });
+                    button.addEventListener('mouseleave', () => {
+                        button.style.backgroundColor = 'transparent';
+                        button.style.color = '#0d2566';
+                    });
+                    button.addEventListener('click', () => {
+                        document.querySelectorAll('div[id^="form-"]').forEach(
+                            form => {
+                                form.style.display = 'none';
+                            });
+                        const formId = button.getAttribute('data-form');
+                        document.getElementById(formId).style.display = 'block';
+                    });
+                });
+
+                // Manejadores para Conceptualización
+                document.getElementById('btn-conceptualizacion-1').addEventListener(
+                    'click', () => {
+                        showTextConceptualizacion('Conceptualización 1',
+                            'texto-conceptualizacion-1', 'texto-conceptualizacion-2');
+                        showParagraphAndResource('parrafo-conceptualizacion-1',
+                            'recurso-conceptualizacion-1',
+                            'parrafo-conceptualizacion-2',
+                            'recurso-conceptualizacion-2'
+                        );
+                        setActiveButton('btn-conceptualizacion-1',
+                            'btn-conceptualizacion-2');
+                    });
+
+                document.getElementById('btn-conceptualizacion-2').addEventListener(
+                    'click', () => {
+                        showTextConceptualizacion('Conceptualización 2',
+                            'texto-conceptualizacion-2', 'texto-conceptualizacion-1');
+                        showParagraphAndResource('parrafo-conceptualizacion-2',
+                            'recurso-conceptualizacion-2',
+                            'parrafo-conceptualizacion-1',
+                            'recurso-conceptualizacion-1'
+                        );
+                        setActiveButton('btn-conceptualizacion-2',
+                            'btn-conceptualizacion-1');
+                    });
+                // Obtener los botones y los elementos de conceptualización
+                const btnConceptualizacion1 = document.getElementById(
+                    'btn-conceptualizacion-1');
+                const btnConceptualizacion2 = document.getElementById(
+                    'btn-conceptualizacion-2');
+
+                const textoConceptualizacion1 = document.getElementById(
+                    'texto-conceptualizacion-1');
+                const parrafoConceptualizacion1 = document.getElementById(
+                    'parrafo-conceptualizacion-1');
+                const recursoConceptualizacion1 = document.getElementById(
+                    'recurso-conceptualizacion-1');
+
+                const textoConceptualizacion2 = document.getElementById(
+                    'texto-conceptualizacion-2');
+                const parrafoConceptualizacion2 = document.getElementById(
+                    'parrafo-conceptualizacion-2');
+                const recursoConceptualizacion2 = document.getElementById(
+                    'recurso-conceptualizacion-2');
+
+                // Mostrar u ocultar contenido de Conceptualización 1
+                btnConceptualizacion1.addEventListener('click', () => {
+                    textoConceptualizacion1.textContent =
+                        "Estados de la materia";
+                    parrafoConceptualizacion1.style.display = 'block';
+                    recursoConceptualizacion1.style.display = 'block';
+
+                    // Ocultar contenido de Conceptualización 2
+                    parrafoConceptualizacion2.style.display = 'none';
+                    recursoConceptualizacion2.style.display = 'none';
+
+                    // Ocultar contenido de Conceptualización 3
+                    parrafoConceptualizacion3.style.display = 'none';
+                    recursoConceptualizacion3.style.display = 'none';
+                });
+
+                // Mostrar u ocultar contenido de Conceptualización 2
+                btnConceptualizacion2.addEventListener('click', () => {
+                    textoConceptualizacion2.textContent = "Clases de mezclas";
+                    parrafoConceptualizacion2.style.display = 'block';
+                    recursoConceptualizacion2.style.display = 'block';
+
+                    // Ocultar contenido de Conceptualización 1
+                    parrafoConceptualizacion1.style.display = 'none';
+                    recursoConceptualizacion1.style.display = 'none';
+
+                    // Ocultar contenido de Conceptualización 3
+                    parrafoConceptualizacion3.style.display = 'none';
+                    recursoConceptualizacion3.style.display = 'none';
+                });
+
+                // Mostrar u ocultar contenido de Conceptualización 3
+                btnConceptualizacion2.addEventListener('click', () => {
+                    textoConceptualizacion2.textContent = "Diluciones";
+                    parrafoConceptualizacion2.style.display = 'block';
+                    recursoConceptualizacion2.style.display = 'block';
+
+                    // Ocultar contenido de Conceptualización 1
+                    parrafoConceptualizacion1.style.display = 'none';
+                    recursoConceptualizacion1.style.display = 'none';
+
+                    // Ocultar contenido de Conceptualización 2
+                    parrafoConceptualizacion2.style.display = 'none';
+                    recursoConceptualizacion2.style.display = 'none';
+                });
+
+                // Manejadores para Apropiación
+                document.getElementById('btn-apropiacion-1').addEventListener(
+                    'click',
+                    () => {
+                        showTextApropiacion(
+                            'Actividad de calificación automática',
+                            'texto-apropiacion-1',
+                            'parrafo-apropiacion-1', 'recurso-apropiacion-1', [
+                            'texto-apropiacion-2', 'texto-apropiacion-3'
+                        ], ['parrafo-apropiacion-2', 'parrafo-apropiacion-3'],
+                            [
+                                'recurso-apropiacion-2', 'recurso-apropiacion-3'
+                            ]);
+                    });
+
+                document.getElementById('btn-apropiacion-2').addEventListener(
+                    'click',
+                    () => {
+                        showTextApropiacion('Actividad entregable',
+                            'texto-apropiacion-2',
+                            'parrafo-apropiacion-2', 'recurso-apropiacion-2', [
+                            'texto-apropiacion-1', 'texto-apropiacion-3'
+                        ], ['parrafo-apropiacion-1', 'parrafo-apropiacion-3'],
+                            [
+                                'recurso-apropiacion-1', 'recurso-apropiacion-3'
+                            ]);
+                    });
+
+                document.getElementById('btn-apropiacion-3').addEventListener(
+                    'click',
+                    () => {
+                        showTextApropiacion('Actividad puntos adicionales',
+                            'texto-apropiacion-3',
+                            'parrafo-apropiacion-3', 'recurso-apropiacion-3', [
+                            'texto-apropiacion-1', 'texto-apropiacion-2'
+                        ], ['parrafo-apropiacion-1', 'parrafo-apropiacion-2'],
+                            [
+                                'recurso-apropiacion-1', 'recurso-apropiacion-2'
+                            ]);
+                    });
+
+                // Función corregida para mostrar/ocultar el texto de conceptualización
+                function showTextConceptualizacion(text, showId, hideId) {
+                    const hideElement = document.getElementById(hideId);
+                    hideElement.style.display =
+                        'none'; // Ocultar sin borrar el contenido
+                    const showElement = document.getElementById(showId);
+                    showElement.innerText = text;
+                    showElement.style.display = 'block';
+                }
+
+                function showTextApropiacion(text, showTextId, showParaId,
+                    showRecursoId, hideTextIds, hideParaIds, hideRecursoIds) {
+                    hideTextIds.forEach(id => {
+                        document.getElementById(id).innerText = '';
+                        document.getElementById(id).style.display = 'none';
+                    });
+                    hideParaIds.forEach(id => {
+                        document.getElementById(id).style.display = 'none';
+                    });
+                    hideRecursoIds.forEach(id => {
+                        document.getElementById(id).style.display = 'none';
+                    });
+                    document.getElementById(showTextId).innerText = text;
+                    document.getElementById(showTextId).style.display = 'block';
+                    document.getElementById(showParaId).style.display = 'block';
+                    document.getElementById(showRecursoId).style.display =
+                        'block';
+                }
+            });
+
+            // aca esta el acordeon
+            document.querySelectorAll('div[style*="background-color: #fcfcfd"]')
+                .forEach(title => {
+                    title.addEventListener('click', () => {
+                        const content = title.nextElementSibling;
+                        const arrow = title.querySelector('.arrow');
+                        const isVisible = content.style.display === 'block';
+
+                        // Cierra todos los contenidos
+                        document.querySelectorAll(
+                            'div[style*="padding: 15px; display: block;"]')
+                            .forEach(
+                                item => {
+                                    item.style.display = 'none';
+                                    item.previousElementSibling.querySelector('.arrow')
+                                        .innerHTML = '▼'; // Cambia la flecha hacia abajo
+                                });
+
+                        // Abre el contenido del ítem seleccionado si estaba cerrado
+                        if (!isVisible) {
+                            content.style.display = 'block';
+                            arrow.innerHTML = '▲'; // Cambia la flecha hacia arriba
+                        }
+                    });
+                });
+            // Script para volver a la página anterior
+            document.getElementById("btn-volver").addEventListener("click",
+                function () {
+                    window.history.back();
+                });
+
+            // Seleccionar el botón de "Resultados de Aprendizaje" y mostrar su formulario al cargar la página
+            const btnAprendizaje = document.getElementById('btn-aprendizaje');
+            const formAprendizaje = document.getElementById('form-aprendizaje');
+
+            // Mostrar el formulario de "Resultados de Aprendizaje"
+            formAprendizaje.style.display = 'block';
+            // Añadir la clase 'seleccionado' al botón de "Resultados de Aprendizaje"
+            btnAprendizaje.classList.add('seleccionado');
+            btnAprendizaje.style.backgroundColor = '#DB5738';
+            btnAprendizaje.style.color = 'white';
+            btnAprendizaje.style.borderRadius = '50px';
+        </script>
+    </p>
+</body>
+
+</html>

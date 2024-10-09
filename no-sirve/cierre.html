@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/unis_baseTheme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./image/icono.png" type="image/png">
+    <title>UCentral</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <a id="btn-inicio" href="https://aula-ucentral.scalahed.com/" data-section="inicio">INICIO</a>
+        <a id="btn-trayectos" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=2"
+            data-section="trayectos">TRAYECTOS</a>
+        <a id="btn-cierre" href="https://aula-ucentral.scalahed.com/mod/page/view.php?id=3"
+            data-section="cierre">CIERRE</a>
+        <a id="btn-openclass">
+            <img class="img-fluid align-bottom"
+                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/BT_Open%20class.png"
+                alt="Ícono Open Class">
+            <strong>OPEN CLASS</strong>
+        </a>
+        <a href="https://aula-ucentral.scalahed.com/">
+            <img src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/inicio.png"
+                alt="Ícono Home">
+        </a>
+    </div>
+
+    <!--Banner  -->
+    <div class="banner">
+        <p class="banner-content">
+            <img class="img-fluid align-top"
+                src="https://aula-ucentral.scalahed.com/draftfile.php/29/user/draft/19326965/Bnn_%20general.png?time=1727210301442"
+                alt="Inico">
+        </p>
+    </div>
+    <div>
+        <h1 id="h1-cierre">Conclusiones</h1>
+    </div>
+    <!-- Párrafo de texto justificado debajo del título -->
+    <p style="width: 100%; height: 250px; background-color: #c0c0c0; text-align: center; margin-bottom: 40px;">Recurso
+    </p>
+    </div>
+
+    <!-- Contenedor para centrar la barra -->
+    <div class="barra-contenedor">
+        <!-- Barra de navegación -->
+        <div class="barra-navegacion">
+            <div class="botones-contenedor">
+                <!-- Botón 1 -->
+                <button class="responsive-text boton" data-form="form-reflexion">Pausa para reflexionar</button>
+                <!-- Botón 2 -->
+                <button class="responsive-text boton" data-form="form-autoevaluacion">Autoevaluación</button>
+                <!-- Botón 3 -->
+                <button class="responsive-text boton" data-form="form-evalua-profesor">Evalúa a tu
+                    profesor/Tutor</button>
+                <!-- Botón 4 -->
+                <button class="responsive-text boton" data-form="form-evalua-entorno">Evalúa tu entorno</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formularios (deben aparecer debajo de la barra de navegación) -->
+    <div id="form-reflexion" class="formulario">
+        <h2>Pausa para reflexionar</h2>
+        <form>
+            <!-- Contenido del formulario de reflexión -->
+            <input type="text" placeholder="Escribe tus reflexiones aquí">
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div id="form-autoevaluacion" class="formulario">
+        <h2>Autoevaluación</h2>
+        <form>
+            <!-- Contenido del formulario de autoevaluación -->
+            <input type="text" placeholder="Autoevaluación">
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div id="form-evalua-profesor" class="formulario">
+        <h2>Evalúa a tu profesor/Tutor</h2>
+        <form>
+            <!-- Contenido del formulario de evaluación del profesor -->
+            <input type="text" placeholder="Evalúa a tu profesor">
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div id="form-evalua-entorno" class="formulario">
+        <h2>Evalúa tu entorno</h2>
+        <form>
+            <!-- Contenido del formulario de evaluación del entorno -->
+            <input type="text" placeholder="Evalúa tu entorno">
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Botón Volver -->
+    <div class="volver-container">
+        <button id="btn-volver" class="button-custom">
+            <strong><span>Volver</span></strong>
+        </button>
+    </div>
+
+    <script>
+        // Seleccionar el botón de "Pausa para reflexionar" y mostrar su formulario al cargar la página
+        window.onload = function() {
+            const btnReflexion = document.getElementById('btn-reflexion');
+            const formReflexion = document.getElementById('form-reflexion');
+
+            // Mostrar el formulario de "Pausa para reflexionar"
+            formReflexion.style.display = 'block';
+            // Añadir la clase 'seleccionado' al botón de "Pausa para reflexionar"
+            btnReflexion.classList.add('seleccionado');
+        };
+        // Script para manejar la visibilidad de los formularios y la selección de botones
+        document.querySelectorAll('.boton').forEach(button => {
+            button.addEventListener('click', function() {
+                // Ocultar todos los formularios
+                document.querySelectorAll('.formulario').forEach(form => form.style.display = 'none');
+                // Mostrar el formulario correspondiente
+                const formId = this.getAttribute('data-form');
+                document.getElementById(formId).style.display = 'block';
+
+                // Remover la clase 'seleccionado' de todos los botones
+                document.querySelectorAll('.boton').forEach(btn => btn.classList.remove('seleccionado'));
+                // Añadir la clase 'seleccionado' al botón clicado
+                this.classList.add('seleccionado');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

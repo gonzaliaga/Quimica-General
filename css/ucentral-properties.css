@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* =========================[Colores primarios] */
+    --brandColor-01: #ca0107;
+    --brandColor-02: #b0b0b1;
+    --brandColor-03: #1e3547;
+
+    /* =========================[Colroes de acento] */
+    --accentColor_01: #89cb39;
+    --accentColor_02: #657ba7;
+    --accentColor_03: #35bec6;
+
+    /* =========================[Escala de grises] */
+    --grey-00: color-mix(in oklch, black 0%, white);
+    --grey-05: color-mix(in oklch, black 5%, white);
+    --grey-10: color-mix(in oklch, black 10%, white);
+    --grey-15: color-mix(in oklch, black 15%, white);
+    --grey-30: color-mix(in oklch, black 30%, white);
+    --grey-60: color-mix(in oklch, black 60%, white);
+    --grey-90: color-mix(in oklch, black 90%, white);
+
+
+    /* =========================[Border & Shadows] */
+    --borderRadius: 10px;
+    --fancyBorder-01: 82% 18% 54% 46% / 79% 71% 29% 21%;
+    --fancyBorder-02: 29% 71% 59% 41% / 79% 54% 46% 21%;
+
+    --txtShadow-01: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    --txtShadow-02: 2px 2px 3px rgba(0, 0, 0, 0.7);
+    --boxShadow-01: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    --boxShadow-02: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    /* =========================[Efectos] */
+    --transitionTime: 5s;
+    --transitionEffect: ease-in-out;
+    --motionRange: 5px;
+
+
+
+}
